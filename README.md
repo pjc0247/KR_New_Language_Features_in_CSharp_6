@@ -2,7 +2,7 @@ Original Source : https://github.com/dotnet/roslyn/wiki/New-Language-Features-in
 
 New Language Features in C# 6
 ====
-이 문서에서는 C# 6에서 새롭게 추가된 기능들에 대해서 설명합니다. 이곳에 작성된 모든 기능들은 VS 2015에서 구현되었습니다.
+이 문서에서는 C# 6에서 새롭게 추가된 기능들에 대해서 설명합니다. 이곳에 작성된 모든 기능들은 VS 2015에서 구현되어 있습니다.
 
 향상된 Auto-property
 ==========================
@@ -137,7 +137,7 @@ This does mean that it can now be a breaking change to turn an ordinary static m
 
 
 
-Null-conditional operators
+Null-conditional 연산자
 ==========================
 
 가끔 코드가 null-checking 덕분에 지저분해지는 것을 볼 수 있습니다. 새로운 null-conditional 연산자는 값이 null이 아닐 때만 요소 또는 멤버에 접근할 수 있도록 해줍니다. 만약 값이 null이라면 null값을 반환합니다.
@@ -166,7 +166,7 @@ int? first = (customers != null) ? customers[0].Orders.Count() : null;
 ```
 
 Except that `customers` is only evaluated once. None of the member accesses, element accesses and invocations immediately following the `?` are executed unless `customers` has a non-null value.
-'customers'가 딱 한번만 평가(evaluated)된다는것을 제외하면, 어떠한 
+
 
 당연하게도 null-conditional 연산자끼리도 체인될 수 있습니다. 아래의 코드에서는 체인을 사용하여 두 번의 null 체크를 하는것을 보여줍니다.
 
