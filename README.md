@@ -310,8 +310,7 @@ Extension Add methods in collection initializers
 ================================================
 
 
-우리가 C#의 콜렉션 생성자를 처음 구현했을 때, extension으로 확장된 'Add' 메소드는 사용할 수 없었던 버그가 있었습니다. VB에서는 처음부터 올바르게 동작하였기 때문에, 우리가 C#에 대해서는 잊고 있었던 것 같습니다. 이 버그는 수정되엇고, 이제 문제 없이 오브젝트의 생성자에서 확장된 'Add' 메소드를 사용할 수 있습니다. 이건 대단한 기능은 아니면서도 가끔 유용하게 사용됩니다. It’s not much of a feature, but it’s occasionally useful, and it turned out implementing it in the new compiler amounted to removing a check that prevented it.
-
+우리가 C#의 콜렉션 생성자를 처음 구현했을 때, extension으로 확장된 'Add' 메소드는 사용할 수 없었던 버그가 있었습니다. VB에서는 처음부터 올바르게 동작하였기 때문에, 우리가 C#에 대해서는 잊고 있었던 것 같습니다. 이 버그는 수정되엇고, 이제 문제 없이 오브젝트의 생성자에서 확장된 'Add' 메소드를 사용할 수 있습니다. 이건 대단한 기능은 아니면서도 가끔 유용하게 사용됩니다. 우리는 이에 해당하는 부분을 새로운 컴파일러에서 수정하여, 문제 없이 작동하도록 하였습니다.
 
 
 Improved overload resolution
