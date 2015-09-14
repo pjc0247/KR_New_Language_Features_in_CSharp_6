@@ -55,12 +55,12 @@ public class Customer
 This is about expressing types more concisely, but note that it also removes an important difference in the language between mutable and immutable types: auto-properties were a shorthand available only if you were willing to make your class mutable, and so the temptation to default to that was great. Now, with getter-only auto-properties, the playing field has been leveled between mutable and immutable.
 
 
-Expression-bodied function members
+표현식 타입의 멤버들 
 ==================================
 
 람다 표현식은 {}로 이루어진 일반적인 함수형의 body 또는 표현식 타입의 body로 선언할 수 있었습니다. 새로운 Expression-bodied func members 기능은 클래스 멤버에도 이러한 편의성을 제공합니다.
 
-Expression bodies on method-like members
+메소드에서 표현식 타입의 정의 사용하기
 ----------------------------------------
 
 메소드와 유저가 정의한 오퍼레이터들 그리고 타입 변환기기는 표현식 타입의 body로 선언할 수 있게 되었습니다. 이 기능을 사용하려면 람다에서 사용하는 => 화살표를 이용합니다.
@@ -80,7 +80,7 @@ public void Print() => Console.WriteLine(First + " " + Last);
 ```
 
 
-Expression bodies on property-like function members
+프로퍼티에서 표현식 타입의 정의 사용하기
 ---------------------------------------------------
 
 프로퍼티나 인덱서는 문법적으로 지원되는 getter와 setter를 가질 수 있었습니다. 이제부턴 getter-only의 프로퍼티나 인덱서에 표현식 타입의 body 선언을 사용할 수 있습니다.
