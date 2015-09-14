@@ -279,7 +279,7 @@ try { … } catch (Exception e) when (Log(e)) {}
 ```
 
 
-Await in catch and finally blocks
+catch, finally 블록에서의 await 사용
 =================================
 
 C# 5에서는 'await' 키워드를 catch와 finally 블록 안에서 사용하는것이 허용되지 않았습니다. 그 당시에 우리는 그걸 구현하는것은 불가능하다고 확신했엇지만, 결국 불가능하지 않은 일로 만들어냈습니다. 
