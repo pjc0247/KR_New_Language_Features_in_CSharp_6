@@ -269,7 +269,6 @@ catch (MyException e) when (myfilter(e))
 
 익셉션 필터는 catch 후 다시 throw 하는 기존의 방법보다 좋은데, 익셉션 필터를 사용하면 stack이 손상되지 않은(unharmed) 채로 남아있기 때문입니다. 익셥션이 발생한 후 스택을 덤프했을 때, catch 후 rethrow하는 방법은 단순히 어느곳에서 rethrow 햇는지밖에 알 수 없었지만, 익셉션 필터는 익셉션이 어디서 왔는지를 온전하게 보존합니다. 
 
-It is also a common and accepted form of “abuse” to use exception filters for side effects; e.g. logging. They can inspect an exception “flying by” without intercepting its course. In those cases, the filter will often be a call to a false-returning helper function which executes the side effects:
 아래의 예제는 익셉션 필터를 특이하게 이용하여 응용하는 방법을 보여줍니다. 이러한 방법을 사용하면 익셉션의 처리 경로를 변경하지 않으면서도, 익셉션 객체를 볼 수 있습니다.
 
 ``` c#
