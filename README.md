@@ -118,7 +118,7 @@ class Program
 Extension methods
 -----------------
 
-Extension methods are static methods, but are intended to be used as instance methods. Instead of bringing extension methods into the global scope, the using static feature makes the extension methods of the type available as extension methods:
+확장 메소드들은 static 메소드이지만, 인스턴스 메소드처럼 쓰이기 위해 만들어졌습니다. using static 기능을 사용하면 해당 네임스페이스를 글로벌 스코프로 가져오지 않고도 해당 클래스의 확장 메소드들을 사용할 수 있도록 해줍니다. 
 
 ``` c#
 using static System.Linq.Enumerable; // The type, not the namespace
