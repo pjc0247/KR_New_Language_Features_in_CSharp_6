@@ -38,7 +38,7 @@ public class Customer
 }
 ```
 
-getter-only auto-property의 backing field는 'readonly' 속성으로 선언됩니다. (이걸 신경써야 할 경우는 리플렉션을 수행할 경우밖에 없습니다.) 이러한 getter-only auto-property는 아래의 예제에서 나오듯이 생성자에서 초기화를 수행할 수 있습니다. Also, a getter-only property can be assigned to in the declaring type’s constructor body, which causes the value to be assigned directly to the underlying field:
+getter-only auto-property의 backing field는 'readonly' 속성으로 선언됩니다. (이걸 신경써야 할 경우는 리플렉션을 수행할 경우밖에 없습니다.) 이러한 getter-only auto-property는 아래의 예제에서 나오듯이 생성자에서 초기화를 수행할 수 있습니다. 또한 이러한 getter-only 프로퍼티들은 타입 생성자에서도 대입(assign) 될 수 있습니다. 이 경우에도 실제 백필드(underlying field)에 값이 바로 대입됩니다.
 
 
 ``` c#
